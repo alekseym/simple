@@ -45,15 +45,15 @@ void testfill()
   for (int i=0; i<100; i++)
     arr[i] = new Simple ();
 }
-/*
+
 void showAll()
 {
-  for (int i = 0, i<100, i++)
-    if 
-       
-    else
+  for (int i = 0; i<100; i++)
+    arr[i]->show();
+
+    //else
 }
-*/
+
 Simple g;
 
 
@@ -75,4 +75,7 @@ int main (){
   a.show();
   printf("point3\n");
   delete d;
+  init();
+  testfill();
+  showAll();
 }
