@@ -10,11 +10,18 @@ Simple(){
   printf ("hello\n");
 }
 
+~Simple()
+{
+  printf("destructor\n");
+}
+
 void show()
 {
   printf("%d \n",val);
 }
 };
+
+  Simple g;
 
 int main (){
   printf("point1\n");
