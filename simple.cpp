@@ -32,6 +32,7 @@ void show()
 };
 
 
+
 Simple *arr[100];
 
 void init(){
@@ -50,13 +51,15 @@ void showAll()
 {
   for (int i = 0; i<100; i++)
     arr[i]->show();
+}
 
-    //else
+void deleteAll()
+{
+  for (int i=0; i<100; i++)
+    delete arr[i];
 }
 
 Simple g;
-
-
 
 int main (){
   Simple *d;
@@ -78,4 +81,5 @@ int main (){
   init();
   testfill();
   showAll();
+  deleteAll();
 }
