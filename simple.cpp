@@ -32,13 +32,34 @@ void show()
 };
 
 
+Simple *arr[100];
+
+void init(){
+  printf("Init fuction has turned on \n");
+  for (int i=0; i<100; i++)
+    arr[i] = NULL;
+}
+
+void testfill()
+{
+  for (int i=0; i<100; i++)
+    arr[i] = new Simple ();
+}
+/*
+void showAll()
+{
+  for (int i = 0, i<100, i++)
+    if 
+       
+    else
+}
+*/
 Simple g;
 
 
 
 int main (){
   Simple *d;
-
   d=new Simple();
 
   printf("d=%d\n", d->getVal());
