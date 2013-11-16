@@ -1,37 +1,31 @@
 #include <stdio.h>
+#include "simple.h"
 
-class Simple {
-public:
-  int val;
-public:
 
-Simple(){
+Simple::Simple(){
   val=0;
   printf ("hello\n");
 }
 
-~Simple()
+Simple::~Simple()
 {
   printf("destructor\n");
 }
 
-int getVal()
+int Simple::getVal()
 {
   return val;
 }
 
-void setVal(int ival)
+void Simple::setVal(int ival)
 {
   val = ival;
 }
 
-void show()
+void Simple::show()
 {
   printf("%d \n",val);
 }
-};
-
-
 
 Simple *arr[100];
 
